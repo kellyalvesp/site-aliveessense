@@ -12,3 +12,16 @@ _Pietra Giovana da Silva Lavina_ <br>
 [emilly015](https://github.com/emilly015) <br>
 [kellyalvesp](https://github.com/kellyalvesp) <br>
 [pietralavina](https://github.com/pietralavina)
+
+   /* section.home{
+                background: linear-gradient(blue, red,green), radial-gradient(black, gray);
+
+                height: 10vw;
+                overflow-y: scroll;
+            }
+
+            div.container{
+                background: green;
+                padding: 10vw;
+            }
+        */
