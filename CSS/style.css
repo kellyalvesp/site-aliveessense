@@ -95,6 +95,12 @@ main section.beneficios {
     height: 100vh;
     display: flex;
 }
+main section.beneficios ul h2.titulo {
+    font-size: 2rem;
+    color: #545454;
+    padding: 5vw 0 0 0;
+    text-align: center;
+}
 main section.beneficios ul li h2 {
     font-size: 1.7rem;
     color: #a6a6a6;
@@ -105,13 +111,34 @@ main section.beneficios ul li p {
     font-size: 1.1rem;
 }
 main section.beneficios ul li {
-    margin: 2vw 0 0 0;
-    padding: 0.5vw 12vw 0 1vw;
+    margin: 1vw 1vw 1vw 1vw;
 }
-main section.beneficios img {
+main section.beneficios ul {
+    background: #cfcfcf;
+    border-radius: 110px;
+    margin: 3vw 4vw 4vw 4vw;
+}
+main section.beneficios div img {
     width: 35vw;
     height: 90vh;
     margin: 2vw 0 0 2vw;
 }
-
- 
+/*==============
+    HOME MAIN 3
+===============*/
+main section.sugestoes {
+    width: 100vw;
+    height: 100vh;
+}
+main section.sugestoes h2 {
+    font-size: 2rem;
+    color: #545454;
+    padding: 5vw 0 0 0;
+    text-align: center;
+}
+main section.sugestoes p {
+    text-align: center;
+    padding: 1vw 0 0 0;
+    color: #7e7a7a;
+    font-size: 1.2rem;
+}
