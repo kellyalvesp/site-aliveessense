@@ -71,12 +71,12 @@ header ul li a {
     text-decoration: none;
     color: #545454;
 }
-/*==============
-    HOME MAIN 
-===============*/
+/*=================
+     HOME MAIN 
+==================*/
 main section.home {
     color: #a6a6a6;
-    text-align: right;
+    text-align: end;
     width: 98vw;
     height: 100vh;
 }
@@ -87,9 +87,9 @@ main section.home h2{
 main section.home p {
     font-size: 1.2rem;
 }
-/*==============
-    HOME MAIN 2
-===============*/
+/*=================
+  HOME BENEFÍCIOS
+==================*/
 main section.beneficios {
     width: 100vw;
     height: 100vh;
@@ -123,9 +123,9 @@ main section.beneficios div img {
     height: 90vh;
     margin: 2vw 0 0 2vw;
 }
-/*==============
-    HOME MAIN 3
-===============*/
+/*=================
+  HOME SUGESTÕES
+==================*/
 main section.sugestoes {
     width: 100vw;
     height: 100vh;
@@ -141,4 +141,41 @@ main section.sugestoes p {
     padding: 1vw 0 0 0;
     color: #7e7a7a;
     font-size: 1.2rem;
+}
+/*=================
+ HOME QUESTIONÁRIOS
+==================*/
+main section.questionarios {
+    width: 100vw;
+    height: 100vh;
+}
+main section.questionarios h2 {
+    color: #545454;
+    font-size: 2rem;
+    text-align: end;
+    padding: 4vw 2vw 2vw 2vw;
+}
+main section.questionarios ul {
+    display: flex;
+}
+main section.questionarios ul li {
+    background:#dad5d5;
+    padding: 3vw 3vw 3vw 3vw;
+    margin: 1vw 1vw 1vw 1vw;
+    border-radius: 50px;
+    height: 60vh;
+}
+main section.questionarios ul li h3 {
+    color: #545454;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #adadad;
+    border-radius: 30px;
+    padding: 1vw 1vw 1vw 1vw;
+}
+main section.questionarios ul li p {
+    color: #777272;
+    text-align: initial;
+    margin: 5vw 0 0 0;
+    font-size: 1.5rem;
 }
