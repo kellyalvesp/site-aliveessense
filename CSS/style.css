@@ -99,6 +99,19 @@ main section.home h2{
 main section.home p {
     font-size: 1.2rem;
 }
+main section.home >div {
+    background: url(../imagens/celular.png) no-repeat;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 230px;
+    height: 500px;
+}
+main section.home >div div {
+    overflow-y: auto;
+    width: 170px;
+    height: 380px;
+}
+
 /*=================
   HOME BENEFÍCIOS
 ==================*/
@@ -205,4 +218,6 @@ main section.questionarios ul li a {
 ==================*/
 footer p {
     color: #545454;
+    text-align: center;
 }
+
