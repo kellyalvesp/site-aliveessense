@@ -132,7 +132,7 @@ main section.beneficios ul h2.titulo {
 main section.beneficios ul li h2 {
     font-size: 1.7rem;
     color: #8f8f8f;
-    padding: 3vw 0 1vw 0;
+    padding: 0 0 1vw 0;
 }
 main section.beneficios ul li p {
     color: #545454;
@@ -219,5 +219,6 @@ main section.questionarios ul li a {
 footer p {
     color: #545454;
     text-align: center;
+    margin: 2vw 0 0 0;
 }
 
