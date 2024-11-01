@@ -12,15 +12,3 @@ _Pietra Giovana da Silva Lavina_ <br>
 [emilly015](https://github.com/emilly015) <br>
 [kellyalvesp](https://github.com/kellyalvesp) <br>
 [pietralavina](https://github.com/pietralavina)
-
-
- <section class="sugestoes" id="sugestoes">
-            <div>
-                <img src="imagens/Sem título.png" alt="Imagem Práticas Esportivas">
-            </div>
-            <h2>Sugestões</h2>
-            <p>
-                Bem-vindo à nossa aba de sugestões! <br> Nosso objetivo é melhorar continuamente e oferecer o melhor
-                para todos. <br> Confira nossas sugestões e ajude-nos a fazer ainda mais por você!
-            </p>
-        </section>

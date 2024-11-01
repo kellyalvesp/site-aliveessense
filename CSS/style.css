@@ -3,57 +3,146 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /*==============
     HOME PAGE 
 ===============*/
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
     background: #efeeee;
+    scroll-behavior: smooth;
 }
+
 header {
     color: #545454;
     justify-content: space-between;
@@ -62,24 +151,30 @@ header {
     position: fixed;
     top: 0%;
     width: 100%;
+    font-weight: bold;
 }
+
 header h1 {
     text-align: left;
     font-size: 1.5rem;
     margin: 2vw 2vw 2vw 2vw;
 }
+
 header nav ul {
     display: flex;
     margin: 0 2vw 0 2vw;
 }
+
 header nav ul li {
     margin: 2vw 0.5vw 2vw 0.5vw;
     font-size: 1.3rem;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: #545454;
 }
+
 /*=================
      HOME MAIN 
 ==================*/
@@ -88,14 +183,20 @@ main section.home {
     text-align: end;
     width: 98vw;
     height: 100vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
 }
-main section.home h2{
+
+main section.home h2 {
     font-size: 2rem;
     padding: 20vw 0 1vw 0;
 }
+
 main section.home p {
     font-size: 1.2rem;
 }
+
 main section.home >div {
     background: url(../imagens/celular-removebg-preview.png) no-repeat;
     box-sizing: border-box;
@@ -103,14 +204,16 @@ main section.home >div {
     width: 230px;
     height: 500px;
     text-align: left;
-    margin: 0 25vw 100vw 25vw;
+    margin: 15vw 30vw 0 0;
 }
+
 main section.home >div div {
     overflow-y: auto;
     width: 170px;
     height: 335px;
 }
-main section.home div >div ul li {
+
+main section.home >div div ul li {
     margin: 0 0 1vw 0;
 }
 
@@ -120,71 +223,121 @@ main section.home div >div ul li {
 main section.beneficios {
     width: 96vw;
     height: 96vh;
-    display: flex;  
+    display: flex;
     background: #cfcfcf;
     border-radius: 140px;
     margin: 2vw 2vw 2vw 2vw;
 }
+
 main section.beneficios ul h2.titulo {
     font-size: 2rem;
     color: #545454;
     padding: 2vw 0 0 0;
     text-align: center;
+    font-weight: bold;
 }
+
 main section.beneficios ul li h2 {
     font-size: 1.7rem;
     color: #8f8f8f;
     padding: 2vw 0 1.5vw 0;
+    font-weight: bold;
 }
+
 main section.beneficios ul li p {
     color: #545454;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
+
 main section.beneficios ul li {
     margin: 1vw 1vw 1vw 1vw;
 }
+
 main section.beneficios ul {
     border-radius: 100px;
     margin: 3vw 4vw 3vw 4vw;
 }
+
 main section.beneficios div img {
     height: 96vh;
 }
+
 /*=================
   HOME SUGESTÕES
 ==================*/
 main section.sugestoes {
     width: 96vw;
-    height: 96vh; 
+    height: 96vh;
     background: #cfcfcf;
     border-radius: 140px;
     margin: 2vw 2vw 2vw 2vw;
+    text-align: center;
 }
+
 main section.sugestoes h2 {
     font-size: 2rem;
     color: #545454;
-    padding: 2vw 0 0 0;
-    text-align: center;
+    margin: 0 0 1vw 0;
+    font-weight: bold;
 }
-main section.sugestoes h3 {
+
+main section.sugestoes>div {
+    display: flex;
+    align-items: center;
+    border-bottom: solid #8f8f8f 2px;
+    margin: 0 2vw 0 4vw;
+    padding: 2vw 0 2vw 0;
+}
+
+main section.sugestoes div.first h3 {
     font-size: 1.7rem;
     color: #8f8f8f;
     padding: 0 0 1vw 0;
+    margin: 0 4vw 0 4vw;
+    font-weight: bold;
 }
-main section.sugestoes p {
+
+main section.sugestoes div.first p {
+    margin: 0 4vw 0 4vw;
     color: #545454;
     font-size: 1.1rem;
+    font-weight: bold;
 }
-main section.sugestoes div {
-    margin: 1vw 1vw 1vw 1vw;
+
+main section.sugestoes div.first iframe {
+    height: 20vw;
+    width: 40vw;
+    border-radius: 80px;
+    margin: 0 0 0 6vw;
 }
-main section.sugestoes div {
-    border-radius: 100px;
-    margin: 3vw 4vw 3vw 4vw;
+
+main section.sugestoes ul {
+    display: flex;
+    margin: 6vw 5vw 5vw 5vw;
 }
-main section.sugestoes div.first img {
-    height: 96vh;
+
+main section.sugestoes ul li h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #817e7e;
 }
+
+main section.sugestoes ul li p {
+    margin: 1vw 1vw 2vw 1vw;
+    font-size: 1.2rem;
+    color: #464646;
+}
+
+main section.sugestoes ul li a {
+    text-decoration: none;
+    color: #817e7e;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #b9b9b9;
+    padding: 0.8vw 0.8vw 0.8vw 0.8vw;
+    border-radius: 20px;
+}
+
 /*=================
  HOME QUESTIONÁRIOS
 ==================*/
@@ -192,22 +345,27 @@ main section.questionarios {
     width: 100vw;
     height: 100vh;
 }
+
 main section.questionarios h2 {
     color: #545454;
     font-size: 2rem;
     text-align: start;
     padding: 4vw 2vw 2vw 2vw;
+    font-weight: bold;
 }
+
 main section.questionarios ul {
     display: flex;
 }
+
 main section.questionarios ul li {
-    background:#d6d6d6;
+    background: #d6d6d6;
     padding: 3vw 3vw 3vw 3vw;
     margin: 1vw 1vw 1vw 1vw;
     border-radius: 50px;
     height: 60vh;
 }
+
 main section.questionarios ul li h3 {
     color: #545454;
     text-align: center;
@@ -215,13 +373,16 @@ main section.questionarios ul li h3 {
     background-color: #acacaf;
     border-radius: 30px;
     padding: 1vw 1vw 1vw 1vw;
+    font-weight: bold;
 }
+
 main section.questionarios ul li p {
     color: #777272;
     text-align: initial;
     margin: 5vw 0 3vw 0;
     font-size: 1.5rem;
 }
+
 main section.questionarios ul li a {
     color: #545454;
     font-size: 1rem;
@@ -230,13 +391,30 @@ main section.questionarios ul li a {
     padding: 1vw 1vw 1vw 1vw;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
 }
+
 /*=================
     HOME FOOTER
 ==================*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 6vw 0 6vw;
+    padding: 2vw 0 0 0;
+    border-top: solid 2px #8f8f8f;
+    font-weight: bold;
+}
+
 footer p {
     color: #545454;
     text-align: center;
-    margin: 2vw 0 0 0;
+    margin: 0 0 1vw 0;
 }
 
+footer a i {
+    color: #545454;
+    font-size: 2rem;
+    margin: 0 0 2vw 0;
+}
