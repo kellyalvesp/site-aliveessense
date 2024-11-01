@@ -88,29 +88,23 @@ header nav ul li a {
 main section {
     margin: 8vw 2vw 4vw 2vw;
 }
-main section div h1 {
+main section h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #8a8a8a;
 }
-main section div h2 {
+main section h2 {
     margin: 2vw 0 2vw 0;
     font-size: 1.5rem;
     font-weight: bold;
     color: #545454;
 }
-main section div h2.firstchild {
-    margin: 2vw 0 1vw 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #545454;
-}
-main section div p {
+main section p {
     font-size: 1.2rem;
     color: #666666;
     width: 1000px;
 }
-main section div.suplementos h3 {
+main section h3 {
     margin: 1vw 0 1vw 0;
     font-size: 1.3rem;
     font-weight: bold;
