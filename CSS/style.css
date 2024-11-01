@@ -152,8 +152,11 @@ main section.beneficios div img {
   HOME SUGESTÕES
 ==================*/
 main section.sugestoes {
-    width: 100vw;
-    height: 100vh;
+    width: 96vw;
+    height: 96vh; 
+    background: #cfcfcf;
+    border-radius: 140px;
+    margin: 2vw 2vw 2vw 2vw;
 }
 main section.sugestoes h2 {
     font-size: 2rem;
@@ -161,11 +164,24 @@ main section.sugestoes h2 {
     padding: 2vw 0 0 0;
     text-align: center;
 }
+main section.sugestoes h3 {
+    font-size: 1.7rem;
+    color: #8f8f8f;
+    padding: 0 0 1vw 0;
+}
 main section.sugestoes p {
-    text-align: center;
-    padding: 1vw 0 0 0;
-    color: #7e7a7a;
-    font-size: 1.2rem;
+    color: #545454;
+    font-size: 1.1rem;
+}
+main section.sugestoes div {
+    margin: 1vw 1vw 1vw 1vw;
+}
+main section.sugestoes div {
+    border-radius: 100px;
+    margin: 3vw 4vw 3vw 4vw;
+}
+main section.sugestoes div.first img {
+    height: 96vh;
 }
 /*=================
  HOME QUESTIONÁRIOS

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <script>
+            function treino(event) {
+                event.preventDefault();
+                let objetivo = document.getElementById('objetivoTreino').value;
+                let musculo = document.getElementById('treinoMusculo').value;
+
+                let treinoNome = "";
+                let treinoImagem = "";
+                let treinoExercicioDesc = "";
+                let treinoExercicioNome = "";
+                let resultado = "";
+
+                if (objetivo == "1" && musculo == "1") {
+                    treinoNome = "Ganho de massa muscular";
+                    treinoExercicioDesc = "Sente-se em um banco com as pernas afastadas. Segure um halter com uma mão e apoie o cotovelo no interior da coxa. Mantendo o braço fixo, flexione o antebraço levando o halter em direção ao ombro. Em seguida, abaixe lentamente o halter de volta à posição inicial. Repita o exercício com a outra mão.";
+                    treinoExercicioNome = "Rosca Concentrada";
+                    treinoImagem = "src/rosca-concentrada-erros-.webp";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                } else if (objetivo == "1" && musculo == "2"){
+                    treinoNome = "Ganho de massa muscular";
+                    treinoExercicioDesc = "Deite-se num banco com os ombros apoiados, segure um haltere com ambas as mãos acima do peito, e desça-o lentamente para trás da cabeça, alongando o peito e os dorsais, depois volte à posição inicial.";
+                    treinoExercicioNome = "Pullover";
+                    treinoImagem = "src/dumbbell-straight-arm-pullover.gif";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                } else if (objetivo == "1" && musculo == "3"){
+                    treinoNome = "Ganho de massa muscular";
+                    treinoExercicioDesc = "Sente-se num banco, segure um haltere em cada mão à altura dos ombros, com as palmas voltadas para a frente. Empurre os pesos para cima até estender completamente os braços, depois desça controladamente à posição inicial. Mantém o core firme e as costas retas.";
+                    treinoExercicioNome = "Overhead Press";
+                    treinoImagem = "src/seated-dumbbell-shoulder-press-400.avif";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                } else if (objetivo == "1" && musculo == "4"){
+                    treinoNome = "Ganho de massa muscular";
+                    treinoExercicioDesc = "Sente-te com as costas apoiadas, ajuste o rolo sobre a parte inferior das pernas (próximo aos tornozelos) e segure as alças laterais. Estenda as pernas até ficarem quase retas, contraindo os quadríceps, e desça lentamente de volta à posição inicial.";
+                    treinoExercicioNome = "Cadeira Extensora";
+                    treinoImagem = "src/pernas-extensao-de-pernas-na-maquina.webp";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                } else if (objetivo == "1" && musculo == "5"){
+                    treinoNome = "Ganho de massa muscular";
+                    treinoExercicioDesc = "Desça o peso com as costas retas e quadris para trás até sentir alongamento nos isquiotibiais, depois suba contraindo os glúteos.";
+                    treinoExercicioNome = "Stiff";
+                    treinoImagem = "src/levantamento-terra-deadlift-stiff-com-halteres-1.webp";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                } else if (objetivo == "2" && musculo == "1") {
+                    treinoNome = "Perda de peso"; 
+                    treinoExercicioDesc = "Segure a barra com os halteres para cima e cotovelos junto ao corpo, levante-os até a altura dos ombros contraindo os bíceps, e desça controladamente.";
+                    treinoExercicioNome = "Rosca Direta";
+                    treinoImagem = "src/dumbbell-biceps-curl.gif";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                }  else if (objetivo == "2" && musculo == "2") {
+                    treinoNome = "Perda de peso"; 
+                    treinoExercicioDesc = "Incline-se para frente com os pés na largura dos ombros, segure um haltere em cada mão com os braços pendentes para baixo. Abra os braços para os lados, mantendo os cotovelos levemente flexionados, até que cheguem à altura dos ombros. Depois, volte lentamente para a posição inicial.";
+                    treinoExercicioNome = "Crucifixo Inverso";
+                    treinoImagem = "src/dumbbell-reverse-fly-400.avif";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                }  else if (objetivo == "2" && musculo == "3") {
+                    treinoNome = "Perda de peso"; 
+                    treinoExercicioDesc = "Deite-se de barriga para baixo, apoie os antebraços e as pontas dos pés, mantendo o corpo reto. Contraia o abdômen e segure a posição, sem deixar o quadril subir ou descer.";
+                    treinoExercicioNome = "Prancha";
+                    treinoImagem = "src/webpc-passthru.webp";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                }  else if (objetivo == "2" && musculo == "4") {
+                    treinoNome = "Perda de peso"; 
+                    treinoExercicioDesc = "Sente-se na máquina leg press, coloque os pés na plataforma, empurre para estender as pernas sem travar os joelhos e retorne à posição inicial; faça de 10 a 15 repetições";
+                    treinoExercicioNome = "Leg Press";
+                    treinoImagem = "src/pernas-leg-press-45-com-pes-distantes.webp";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                }  else if (objetivo == "2" && musculo == "5") {
+                    treinoNome = "Perda de peso"; 
+                    treinoExercicioDesc = "Fique em pé segurando um haltere em cada mão, dê um passo à frente com um perna e abaixe o corpo até que o joelho da perna de trás quase toque o chão, mantendo o tronco ereto; empurre de volta para a posição inicial e repita com a outra perna, fazendo de 10 a 15 repetições.";
+                    treinoExercicioNome = "Afundo com Halteres";
+                    treinoImagem = "src/2edbed_58ab745e51874c79b1d4ac70b994e7d0~mv2.webp";
+                    resultado += `<h3>Objetivo: ${treinoNome}</h3>`;
+                    resultado += `<p><strong>Exercício: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<p>${treinoExercicioDesc}</p>`;
+                }
+                if (musculo == "1") {
+                    resultado += `<p><strong>Grupo muscular: Bíceps e Tríceps</strong></p>`;
+                } else if (musculo == "2") {
+                    resultado += `<p><strong>Grupo muscular: Peito e Costas</strong></p>`;
+                } else if (musculo == "3") {
+                    resultado += `<p><strong>Grupo muscular: Abdômen e Ombro</strong></p>`;
+                } else if (musculo == "4") {
+                    resultado += `<p><strong>Grupo muscular: Glúteo e Quadríceps</strong></p>`;
+                } else if (musculo == "5") {
+                    resultado += `<p><strong>Grupo muscular: Posterior e Panturrilha</strong></p>`;
+                }
+               
+                document.getElementById('resultado').innerHTML = resultado;
+            }
+        </script>
+        <section>
+            <h1>Questionário de preferências</h1>
+            <form action="#" method="get">
+                <p class="primeiro">
+                    <label for="objetivoTreino">Qual é seu objetivo treinando?</label>
+                    <select name="tempo" id="objetivoTreino">
+                        <option value="null"></option>
+                        <option value="1">Ganho de massa muscular</option>
+                        <option value="2">Perda de peso</option>
+                    </select>
+                </p>
+                <p class="segundo">
+                    <label for="treinoMusculo">Qual músculo você tem preferência em desenvolver?</label>
+                    <select id="treinoMusculo" name="tempo">
+                        <option value="null"></option>
+                        <option value="1">Bíceps e Tríceps</option>
+                        <option value="2">Peito e Costas</option>
+                        <option value="3">Abdômen e Ombro</option>
+                        <option value="4">Glúteo e Quadríceps</option>
+                        <option value="5">Posterior e Panturrilha</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="reset">Limpar</button>
+                    <button type="button" onclick="treino(event)">Enviar</button>
+                </p>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+</body>
+</html> 
