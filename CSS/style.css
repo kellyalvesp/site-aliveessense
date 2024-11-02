@@ -179,7 +179,15 @@ header nav ul li a {
      HOME MAIN 
 ==================*/
 main section.home {
-    color: #a6a6a6;
+    background-image: url(../imagens/Design\ sem\ nome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+main section.home {
+    color: #545454;
     text-align: end;
     width: 98vw;
     height: 100vh;
