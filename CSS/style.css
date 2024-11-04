@@ -455,10 +455,16 @@ footer {
     font-weight: bold;
 }
 
-footer p {
+footer div p {
     color: #545454;
     text-align: center;
     margin: 0 0 1vw 0;
+}
+
+footer p {
+    align-items: center;
+    text-align: center;
+    color: #545454;
 }
 
 footer a i {
