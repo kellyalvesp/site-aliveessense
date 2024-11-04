@@ -15,22 +15,42 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#inicio">Início</a>
+                    <a href="/home/ana.dominoni/Documentos/site-aliveessense/home.html" onclick="setActive(this)">Início</a>
+                    <span class="underline"></span>
                 </li>
                 <li>
-                    <a href="#beneficios">Benefícios</a>
+                    <a href="#beneficios" onclick="setActive(this)">Benefícios</a>
+                    <span class="underline"></span>
+                </li>
+                <li class="active">
+                    <a href="#sugestoes" onclick="setActive(this)">Sugestões</a>
+                    <span class="underline"></span>
                 </li>
                 <li>
-                    <a href="#sugestoes">Sugestões</a>
+                    <a href="#questionarios" onclick="setActive(this)">Questionários</a>
+                    <span class="underline"></span>
                 </li>
                 <li>
-                    <a href="#questionarios">Questionários</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
+                    <a href="#contato" onclick="setActive(this)">Contato</a>
+                    <span class="underline"></span>
                 </li>
             </ul>
         </nav>
+        <script>
+            function setActive(element) {
+                // Remove a classe 'active' de todos os itens
+                const items = document.querySelectorAll('nav li');
+                items.forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.underline').style.transform = 'scaleX(0)';
+                });
+
+                // Adiciona a classe 'active' ao item clicado
+                const parentLi = element.parentElement;
+                parentLi.classList.add('active');
+                parentLi.querySelector('.underline').style.transform = 'scaleX(1)';
+            }
+        </script>
     </header>
     <main>
         <section>

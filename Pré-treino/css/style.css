@@ -63,25 +63,67 @@ header {
     top: 0%;
     width: 100%;
     font-weight: bold;
+    opacity: 70%;
 }
+
 header h1 {
     text-align: left;
     font-size: 1.5rem;
     margin: 2vw 2vw 2vw 2vw;
 }
+
 header nav ul {
     display: flex;
     margin: 0 2vw 0 2vw;
 }
+
 header nav ul li {
     margin: 2vw 0.5vw 2vw 0.5vw;
     font-size: 1.3rem;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: #545454;
 }
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: relative; /* Necessário para a linha animada */
+}
 
+header nav li {
+    margin: 0 15px;
+    position: relative; /* Necessário para a linha animada */
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0; /* Espaçamento para a linha */
+}
+
+header nav li.active a {
+    font-weight: bold;
+    color: #ffffff; /* Cor da navegação selecionada */
+}
+
+/* Linha animada */
+header span.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #ffffff; /* Cor da linha */
+    transform: scaleX(0); /* Começa com a largura 0 */
+    transition: transform 0.3s ease; /* Animação */
+}
+
+header nav li.active span.underline {
+    transform: scaleX(1); /* Animação para a largura total */
+}
 /*=================
     HOME MAIN
 ==================*/

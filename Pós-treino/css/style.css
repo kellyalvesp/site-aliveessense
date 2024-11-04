@@ -3,49 +3,137 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /*==============
     HOME PAGE 
 ===============*/
@@ -54,6 +142,7 @@ html {
     background: #efeeee;
     scroll-behavior: smooth;
 }
+
 header {
     color: #545454;
     justify-content: space-between;
@@ -63,23 +152,75 @@ header {
     top: 0%;
     width: 100%;
     font-weight: bold;
+    opacity: 70%;
 }
+
 header h1 {
     text-align: left;
     font-size: 1.5rem;
     margin: 2vw 2vw 2vw 2vw;
 }
+
 header nav ul {
     display: flex;
     margin: 0 2vw 0 2vw;
 }
+
 header nav ul li {
     margin: 2vw 0.5vw 2vw 0.5vw;
     font-size: 1.3rem;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: #545454;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: relative;
+    /* Necessário para a linha animada */
+}
+
+header nav li {
+    margin: 0 15px;
+    position: relative;
+    /* Necessário para a linha animada */
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    /* Espaçamento para a linha */
+}
+
+header nav li.active a {
+    font-weight: bold;
+    color: #ffffff;
+    /* Cor da navegação selecionada */
+}
+
+/* Linha animada */
+header span.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    /* Cor da linha */
+    transform: scaleX(0);
+    /* Começa com a largura 0 */
+    transition: transform 0.3s ease;
+    /* Animação */
+}
+
+header nav li.active span.underline {
+    transform: scaleX(1);
+    /* Animação para a largura total */
 }
 
 /*=================
@@ -88,38 +229,44 @@ header nav ul li a {
 main section {
     margin: 8vw 2vw 4vw 2vw;
 }
+
 main section div h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #8a8a8a;
 }
+
 main section div h2 {
     margin: 2vw 0 2vw 0;
     font-size: 1.5rem;
     font-weight: bold;
     color: #545454;
 }
+
 main section div h2.firstchild {
     margin: 2vw 0 1vw 0;
     font-size: 1.5rem;
     font-weight: bold;
     color: #545454;
 }
+
 main section div p {
     font-size: 1.2rem;
     color: #666666;
     width: 1000px;
 }
+
 main section div.suplementos h3 {
     margin: 1vw 0 1vw 0;
     font-size: 1.3rem;
     font-weight: bold;
     color: #545454;
 }
+
 /*=================
     HOME FOOTER
 ==================*/
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,12 +275,14 @@ footer{
     border-top: solid 2px #8f8f8f;
     font-weight: bold;
 }
+
 footer p {
     color: #545454;
     text-align: center;
     margin: 0 0 1vw 0;
 }
-footer a i{
+
+footer a i {
     color: #545454;
     font-size: 2rem;
     margin: 0 0 2vw 0;
