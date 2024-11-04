@@ -228,7 +228,7 @@ main section.home {
 main section.home {
     color: #545454;
     text-align: end;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
     font-weight: bold;
     display: flex;
@@ -237,11 +237,12 @@ main section.home {
 
 main section.home h2 {
     font-size: 2rem;
-    padding: 20vw 0 1vw 0;
+    padding: 20vw 2vw 1vw 0;
 }
 
 main section.home p {
     font-size: 1.2rem;
+    padding: 0 2vw 0 0;
 }
 
 main section.home >div {
@@ -251,7 +252,7 @@ main section.home >div {
     width: 230px;
     height: 500px;
     text-align: left;
-    margin: 18vw 25vw 0 0;
+    margin: 18vw 24vw 0 0;
 }
 
 main section.home >div div {

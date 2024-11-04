@@ -7,8 +7,46 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>aliveessence</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../home.html" onclick="setActive(this)">Início</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../home.html#beneficios" onclick="setActive(this)">Benefícios</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../home.html#sugestoes" onclick="setActive(this)">Sugestões</a>
+                    <span class="underline"></span>
+                </li>
+                <li class="active">
+                    <a href="../home.html#questionarios" onclick="setActive(this)">Questionários</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../home.html#contato" onclick="setActive(this)">Contato</a>
+                    <span class="underline"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section>
+
+        <script>
+            function enviar(event){
+                event.preventDefault();
+
+                conteudo = "<h1>Enviado com sucesso</h1>";
+
+                document.getElementById("form").innerHTML = conteudo;
+
+            }
+        </script>
+        <section id="form">
             <h1>Formulário Para Contato</h1>
             <form action="#" method="get">
                 <p>
@@ -25,7 +63,7 @@
                 </p>
                 <p>
                     <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="enviar(event)">Enviar</button>
                 </p>
             </form>
         </section>
