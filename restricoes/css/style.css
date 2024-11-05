@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #efeeee;
+    scroll-behavior: smooth;
+    margin: 2vw 0 0 0;
+}
+header {
+    color: #545454;
+    justify-content: space-between;
+    display: flex;
+    background: #cfcfcf;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    font-weight: bold;
+    opacity: 70%;
+}
+header h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 2vw 2vw 2vw 2vw;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0 2vw 0 2vw;
+}
+
+header nav ul li {
+    margin: 2vw 0.5vw 2vw 0.5vw;
+    font-size: 1.3rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #545454;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: relative; /* Necessário para a linha animada */
+}
+
+header nav li {
+    margin: 0 15px;
+    position: relative; /* Necessário para a linha animada */
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0; /* Espaçamento para a linha */
+}
+
+header nav li.active a {
+    font-weight: bold;
+    color: #ffffff; /* Cor da navegação selecionada */
+}
+
+/* Linha animada */
+header span.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #ffffff; /* Cor da linha */
+    transform: scaleX(0); /* Começa com a largura 0 */
+    transition: transform 0.3s ease; /* Animação */
+}
+
+header nav li.active span.underline {
+    transform: scaleX(1); /* Animação para a largura total */
+}
+/*/////////////////////////
+       SECTION  
+/////////////////////////*/
+ body, main {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+}
+
+section {
+    width: 400px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2rem;
+    color:  #696969;
+    margin: 0 0 20px 0;
+	text-align: left;
+	font-weight: bold;
+}
+
+section h1 form {
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    border: none;
+}
+fieldset p select{
+    margin: 1vw 0 2vw 0;
+}
+legend {
+    font-weight: bold;
+    color: #8d9092; /* Cor suave para o texto */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+label {
+    color: #495057; /* Cor para o texto das labels */
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da; /*////// para uma borda suave /////*/
+    border-radius: 8px;
+    background-color: #f8f9fa; /*////// Fundo claro para o select /////*/
+    font-size: 1rem;
+    color: #343a40;
+}
+
+select:focus {
+    border-color: black;
+}
+
+
+.button:hover {
+    background-color: #0056b3;
+}
+button{
+    border-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 10px 10px 10px;
+    background: gray;
+    color: white;
+}
+/* ////////////////////////////////
+           JAVA SCRIPT
+/////////////////////////////////*/
+#resultado {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+#resultado img{
+    padding: 0 0 0 0;
+}
+#resultado p{
+   padding: 0 0 1vw 0;
+}
+#resultado h3{
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 2vw 0 ;
+}
+
+#resultado img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    margin: 10px auto;
+
+}

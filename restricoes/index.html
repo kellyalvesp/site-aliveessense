@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Preferências</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>aliveessence</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html" onclick="setActive(this)">Início</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../index.html#beneficios" onclick="setActive(this)">Benefícios</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../index.html#sugestoes" onclick="setActive(this)">Sugestões</a>
+                    <span class="underline"></span>
+                </li>
+                <li class="active">
+                    <a href="../index.html#questionarios" onclick="setActive(this)">Questionários</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../index.html#contato" onclick="setActive(this)">Contato</a>
+                    <span class="underline"></span>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            function setActive(element) {
+                // Remove a classe 'active' de todos os itens
+                const items = document.querySelectorAll('nav li');
+                items.forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.underline').style.transform = 'scaleX(0)';
+                });
+
+                // Adiciona a classe 'active' ao item clicado
+                const parentLi = element.parentElement;
+                parentLi.classList.add('active');
+                parentLi.querySelector('.underline').style.transform = 'scaleX(1)';
+            }
+        </script>
+    </header>
+    <main>
+        <script>
+            function treino(event) {
+                event.preventDefault();
+                let lesao = document.getElementById('lesaoMusculo').value;
+
+                let treinoImagem = "";
+                let treinoExercicioDesc = "";
+                let treinoExercicioNome = "";
+                let resultado = "";
+
+                if (lesao == "1") {
+                    treinoExercicioDesc = "Posicione-se em quatro apoios, eleve simultaneamente o braço direito e a perna esquerda, segure por 3 a 5 segundos e retorne à posição inicial, repetindo com o braço esquerdo e a perna direita.";
+                    treinoExercicioNome = "Elevação de Braço e Perna Oposta ";
+                    treinoImagem = "src/31411301-passaro-cachorro-360.webp";
+                    resultado += `<p><strong>Exercício 1: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                    treinoExercicioDesc = "Utilize uma máquina de extensão de quadril ou um elástico, mantendo a coluna ereta e o core contraído, enquanto estende a perna para trás, evitando qualquer hiperextensão da coluna.";
+                    treinoExercicioNome = "Extensão de Quadril em Pé";
+                    treinoImagem = "src/extensao-de-quadril-com-perna-dobrada-e-apoio-da-barra.webp";
+                    resultado += `<p><strong>Exercício 2: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                    treinoExercicioDesc = "Sente-se na máquina com as costas bem apoiadas, garantindo que a coluna esteja em posição neutra; mantenha os pés na plataforma e empurre lentamente, controlando o movimento para evitar qualquer sobrecarga na coluna.";
+                    treinoExercicioNome = "Leg Press(com baixa carga)";
+                    treinoImagem = "src/pernas-leg-press-45-com-pes-distantes.webp";
+                    resultado += `<p><strong>Exercício 3: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                } else if (lesao == "2") {
+                    treinoExercicioDesc = "Sente-se na máquina de extensão de pernas, mantendo as costas apoiadas. Levante a barra com as pernas, controlando o movimento para evitar tensão excessiva no joelho.";
+                    treinoExercicioNome = "Extensão de Pernas (com baixa carga)";
+                    treinoImagem = "src/pernas-extensao-de-pernas-na-maquina.webp";
+                    resultado += `<p><strong>Exercício 1: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                    treinoExercicioDesc = "Sente-se na máquina, com as costas apoiadas, e mantenha os pés na plataforma. Empurre lentamente, evitando movimentos bruscos e mantendo a amplitude de movimento confortável.";
+                    treinoExercicioNome = "Leg Press(com baixa carga)";
+                    treinoImagem = "src/pernas-leg-press-45-com-pes-distantes.webp";
+                    resultado += `<p><strong>Exercício 2: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                    treinoExercicioDesc = "Apoie-se nos antebraços e nas pontas dos pés, mantendo o corpo em linha reta. Segure a posição por 20-30 segundos, focando na estabilidade do core e evitando sobrecarregar os joelhos.";
+                    treinoExercicioNome = "Prancha";
+                    treinoImagem = "src/Prancha-Treinamento-Funcional.jpg";
+                    resultado += `<p><strong>Exercício 3: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                } else if (lesao == "3") {
+                    treinoExercicioDesc = "Sente-se na máquina de puxada alta e ajuste a carga para um nível confortável. Puxe a barra suavemente em direção ao peito, mantendo a coluna ereta e os ombros relaxados.";
+                    treinoExercicioNome = "Pulldown";
+                    treinoImagem = "src/costas-puxada-aberta-com-barra-no-pulley.webp";
+                    resultado += `<p><strong>Exercício 1: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                    treinoExercicioDesc = "Em pé, com os braços ao lado do corpo e segurando halteres leves, eleve os braços lateralmente até a altura dos ombros, evitando movimentos bruscos e mantendo o controle.";
+                    treinoExercicioNome = "Elevação Lateral com Halteres(carga leve)";
+                    treinoImagem = "src/example.gif";
+                    resultado += `<p><strong>Exercício 2: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+
+                    treinoExercicioDesc = "Em pé, segure um halter em cada mão à frente do corpo. Eleve os halteres para a frente, até a altura do peito, controlando o movimento e evitando a elevação excessiva.";
+                    treinoExercicioNome = "Elevação Frontal com Halteres(carga leve)";
+                    treinoImagem = "src/2edbed_4e40b2262bb243f194b931ccdd91643b~mv2.webp";
+                    resultado += `<p><strong>Exercício 3: ${treinoExercicioNome}</strong></p>`;
+                    resultado += `<img width="150px" height="150px" src="${treinoImagem}" alt="Treino Imagem"/>`;
+                    resultado += `<h3>${treinoExercicioDesc}</h3>`;
+                }
+                if (lesao == "1") {
+                    resultado += `<p><strong>Lesão: Coluna </strong></p>`;
+                } else if (lesao == "2") {
+                    resultado += `<p><strong>Lesão: Joelho</strong></p>`;
+                } else if (lesao == "3") {
+                    resultado += `<p><strong>Lesão: Ombro</strong></p>`;
+                }
+
+                document.getElementById('resultado').innerHTML = resultado;
+            }
+        </script>
+       <section>
+        <h1>Restrições</h1>
+        <form action="#" method="get">
+        <fieldset>
+            <p>
+             <label for="1">Nos informe, Por gentileza, em qual das áreas abaixo se localiza sua lesão:</label>
+             <select name="setor" id="lesaoMusculo">
+                 <option value="null"></option>
+                 <option value="1">Coluna</option>
+                 <option value="2">Joelho</option>
+                 <option value="3">Ombro</option>
+             </select>
+            </p>
+         </fieldset>
+         <p>
+             <button type="reset">Limpar</button>
+             <button type="button" onclick="treino(event)">Enviar</button>
+         </p>
+         </form>
+         <div id="resultado"></div>
+     </section>
+ </main> 
+</body>
+</html>
