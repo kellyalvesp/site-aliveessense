@@ -131,6 +131,25 @@ header nav li.active span.underline {
 main section {
     margin: 8vw 2vw 4vw 2vw;
 }
+main section a.back-button {
+    background-color: #8a8a8a;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin: 2px 2px 2px 2px;
+  }
+  
+main section a.back-button:hover {
+    background-color: #c4bebe;
+  }
+  
+main section a.back-button:active {
+    background-color: #c4bebe;
+  }
 main section h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -156,7 +175,7 @@ main section h3 {
 /*=================
     HOME FOOTER
 ==================*/
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,12 +184,20 @@ footer{
     border-top: solid 2px #8f8f8f;
     font-weight: bold;
 }
-footer p {
+
+footer div p {
     color: #545454;
     text-align: center;
     margin: 0 0 1vw 0;
 }
-footer a i{
+
+footer p {
+    align-items: center;
+    text-align: center;
+    color: #545454;
+}
+
+footer a i {
     color: #545454;
     font-size: 2rem;
     margin: 0 0 2vw 0;
