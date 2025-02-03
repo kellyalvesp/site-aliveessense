@@ -87,23 +87,23 @@ header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    position: relative; /* Necessário para a linha animada */
+    position: relative; 
 }
 
 header nav li {
     margin: 0 15px;
-    position: relative; /* Necessário para a linha animada */
+    position: relative; 
 }
 
 header nav a {
     text-decoration: none;
     color: #333;
-    padding: 5px 0; /* Espaçamento para a linha */
+    padding: 5px 0; 
 }
 
 header nav li.active a {
     font-weight: bold;
-    color: #ffffff; /* Cor da navegação selecionada */
+    color: #ffffff;
 }
 
 /* Linha animada */
@@ -113,13 +113,13 @@ header span.underline {
     left: 0;
     height: 2px;
     width: 100%;
-    background: #ffffff; /* Cor da linha */
-    transform: scaleX(0); /* Começa com a largura 0 */
-    transition: transform 0.3s ease; /* Animação */
+    background: #ffffff; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
 }
 
 header nav li.active span.underline {
-    transform: scaleX(1); /* Animação para a largura total */
+    transform: scaleX(1); 
 }
 /*/////////////////////////
        SECTION  
@@ -163,12 +163,12 @@ fieldset p select{
 }
 legend {
     font-weight: bold;
-    color: #8d9092; /* Cor suave para o texto */
+    color: #8d9092; 
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 label {
-    color: #495057; /* Cor para o texto das labels */
+    color: #495057; 
     font-size: 1rem;
     display: block;
     margin-bottom: 5px;
@@ -177,9 +177,9 @@ label {
 select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ced4da; /*////// para uma borda suave /////*/
+    border: 1px solid #ced4da; 
     border-radius: 8px;
-    background-color: #f8f9fa; /*////// Fundo claro para o select /////*/
+    background-color: #f8f9fa;
     font-size: 1rem;
     color: #343a40;
 }

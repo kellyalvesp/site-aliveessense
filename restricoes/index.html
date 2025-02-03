@@ -136,10 +136,12 @@
                     resultado += `<p><strong>Lesão: Ombro</strong></p>`;
                 }
 
+                document.getElementById('questionario').style.display = "none";
                 document.getElementById('resultado').innerHTML = resultado;
             }
         </script>
        <section>
+        <div id="questionario">
         <h1>Restrições</h1>
         <form action="#" method="get">
         <fieldset>
@@ -158,6 +160,7 @@
              <button type="button" onclick="treino(event)">Enviar</button>
          </p>
          </form>
+        </div>
          <div id="resultado"></div>
      </section>
  </main> 
