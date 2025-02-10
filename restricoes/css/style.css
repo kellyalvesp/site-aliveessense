@@ -48,15 +48,15 @@ table {
 }
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #efeeee;
+    background: #F3EAD6;
     scroll-behavior: smooth;
     margin: 2vw 0 0 0;
 }
 header {
-    color: #545454;
+    color: #A66D45;
     justify-content: space-between;
     display: flex;
-    background: #cfcfcf;
+    background: #D2C98A;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -81,7 +81,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #545454;
+    color: #A66D45;
 }
 header nav ul {
     list-style: none;
@@ -132,23 +132,24 @@ header nav li.active span.underline {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e9ecef;
+    background-color: #F3EAD6;
 }
 
 section {
     width: 400px;
     padding: 30px;
-    background: #ffffff;
+    background: #F6B6A7;
     border-radius: 12px;
     text-align: center;
 }
 
 section h1 {
     font-size: 2rem;
-    color:  #696969;
+    color:  #A66D45;
     margin: 0 0 20px 0;
 	text-align: left;
 	font-weight: bold;
+    text-align: center;
 }
 
 section h1 form {
@@ -168,7 +169,7 @@ legend {
     margin-bottom: 10px;
 }
 label {
-    color: #495057; 
+    color: #fffce5; 
     font-size: 1rem;
     display: block;
     margin-bottom: 5px;
@@ -197,8 +198,9 @@ button{
     border: none;
     border-radius: 0.5rem;
     padding: 10px 10px 10px 10px;
-    background: gray;
+    background: #A7A155;
     color: white;
+    font-weight: BOLD;
 }
 /* ////////////////////////////////
            JAVA SCRIPT

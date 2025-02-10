@@ -48,15 +48,15 @@ table {
 }
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #efeeee;
+    background: #F3EAD6;
     scroll-behavior: smooth;
     margin: 8vw 0 0 0;
 }
 header {
-    color: #545454;
+    color: #A66E45;
     justify-content: space-between;
     display: flex;
-    background: #cfcfcf;
+    background: #D2C98A;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -82,7 +82,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #545454;
+    color: #A66E45;
 }
 header nav ul {
     list-style: none;
@@ -122,6 +122,8 @@ header span.underline {
 header nav li.active span.underline {
     transform: scaleX(1); /* Animação para a largura total */
 }
+/*=================*/
+
 main section{
     text-align: center;
 }
@@ -130,7 +132,7 @@ main section h1{
     font-size: 2.2rem;
     margin: 5vw 5vw 1.5vw 5vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #696969;
+    color: #A66E45;
 }
 main section p{
     font-size: 1.5rem;
@@ -138,23 +140,24 @@ main section p{
 }
 main section p.primeiro{
     margin: 0vw 5vw 1vw 5vw;
-    color: gray;
+    color: #FD9584;
 }
 main section p.segundo{
     margin: 0vw 0vw 2vw 0vw;
-    color: gray;
+    color: #FD9584;
 }
 main section p button{
     border-bottom: 1rem;
     border: none;
     border-radius: 0.5rem;
     padding: 10px 10px 10px 10px;
-    background: gray;
+    background: #A7A155;
     color: white;
     margin: 0 0 3vw 0;
+    font-weight: bold;
 }
 body {
-    background: #efeeee;
+    background: #F3EAD6;
 }
 /* ////////////////////////////////
            JAVA SCRIPT

@@ -139,15 +139,15 @@ table {
 ===============*/
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #efeeee;
+    background: #F3EAD6;
     scroll-behavior: smooth;
 }
 
 header {
-    color: #545454;
+    color: #A66D45;
     justify-content: space-between;
     display: flex;
-    background: #cfcfcf;
+    background: #D2C98A;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -173,7 +173,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #545454;
+    color: #A66D45;
 }
 header nav ul {
     list-style: none;
@@ -218,7 +218,7 @@ header nav li.active span.underline {
      HOME MAIN 
 ==================*/
 main section.home {
-    background-image: url(../imagens/Design\ sem\ nome.png);
+    background-image: url(../imagens/homeana.dominoniDownloadsimage\(1\).png.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -226,27 +226,29 @@ main section.home {
     height: 100%;
 }
 main section.home {
-    color: #545454;
     text-align: end;
     width: 100vw;
     height: 100vh;
     font-weight: bold;
     display: flex;
     justify-content: right;
+    color: #A66D45;
 }
 
 main section.home h2 {
     font-size: 2rem;
     padding: 20vw 2vw 1vw 0;
+    color: #A66D45;
 }
 
 main section.home p {
     font-size: 1.2rem;
     padding: 0 2vw 0 0;
+    color: #cc9065;
 }
 
 main section.home >div {
-    background: url(../imagens/celular-removebg-preview.png) no-repeat;
+    background: url(../imagens/Design_sem_nome_2_-removebg-preview.png) no-repeat;
     box-sizing: border-box;
     padding: 3vw 5vw 2vw 2vw;
     width: 230px;
@@ -272,28 +274,30 @@ main section.beneficios {
     width: 96vw;
     height: 96vh;
     display: flex;
-    background: #cfcfcf;
+    background: #dad4ae;
     border-radius: 140px;
     margin: 2vw 2vw 2vw 2vw;
 }
 
 main section.beneficios ul h2.titulo {
     font-size: 2rem;
-    color: #545454;
+    color: #FD958A;
     padding: 2vw 0 0 0;
     text-align: center;
     font-weight: bold;
 }
-
+main section.beneficios img {
+    border-radius: 140px;
+}
 main section.beneficios ul li h2 {
     font-size: 1.7rem;
-    color: #8f8f8f;
+    color: #F6B6A7;
     padding: 2vw 0 1.5vw 0;
     font-weight: bold;
 }
 
 main section.beneficios ul li p {
-    color: #545454;
+    color: #ffffff;
     font-size: 1.3rem;
 }
 
@@ -316,7 +320,7 @@ main section.beneficios div img {
 main section.sugestoes {
     width: 96vw;
     height: 96vh;
-    background: #cfcfcf;
+    background: #f5c4b9;
     border-radius: 140px;
     margin: 2vw 2vw 2vw 2vw;
     text-align: center;
@@ -324,7 +328,7 @@ main section.sugestoes {
 
 main section.sugestoes h2 {
     font-size: 2rem;
-    color: #545454;
+    color: #A7A155;
     margin: 0 0 1vw 0;
     font-weight: bold;
 }
@@ -332,14 +336,14 @@ main section.sugestoes h2 {
 main section.sugestoes>div {
     display: flex;
     align-items: center;
-    border-bottom: solid #8f8f8f 2px;
+    border-bottom: solid #A7A155 2px;
     margin: 0 2vw 0 4vw;
     padding: 2vw 0 2vw 0;
 }
 
 main section.sugestoes div.first h3 {
     font-size: 1.7rem;
-    color: #8f8f8f;
+    color: #c5be86;
     padding: 0 0 1vw 0;
     margin: 0 4vw 0 4vw;
     font-weight: bold;
@@ -347,7 +351,7 @@ main section.sugestoes div.first h3 {
 
 main section.sugestoes div.first p {
     margin: 0 4vw 0 4vw;
-    color: #545454;
+    color: #F3EAD6;
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -367,21 +371,21 @@ main section.sugestoes ul {
 main section.sugestoes ul li h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #817e7e;
+    color: #c5be86;
 }
 
 main section.sugestoes ul li p {
     margin: 1vw 1vw 2vw 1vw;
     font-size: 1.2rem;
-    color: #464646;
+    color: #f3ecde;
 }
 
 main section.sugestoes ul li a {
     text-decoration: none;
-    color: #817e7e;
+    color: #F6B6A7;
     font-weight: bold;
     font-size: 1.2rem;
-    background: #b9b9b9;
+    background: #ffeeea;
     padding: 0.8vw 0.8vw 0.8vw 0.8vw;
     border-radius: 20px;
 }
@@ -395,7 +399,7 @@ main section.questionarios {
 }
 
 main section.questionarios h2 {
-    color: #545454;
+    color: #A66D45;
     font-size: 2rem;
     text-align: start;
     padding: 4vw 2vw 2vw 2vw;
@@ -407,7 +411,7 @@ main section.questionarios ul {
 }
 
 main section.questionarios ul li {
-    background: #d6d6d6;
+    background: #D2C98A;
     padding: 3vw 3vw 3vw 3vw;
     margin: 1vw 1vw 1vw 1vw;
     border-radius: 50px;
@@ -415,26 +419,26 @@ main section.questionarios ul li {
 }
 
 main section.questionarios ul li h3 {
-    color: #545454;
+    color: #FD958A;
     text-align: center;
     font-size: 2rem;
-    background-color: #acacaf;
+    background-color: #F3EAD6;
     border-radius: 30px;
     padding: 1vw 1vw 1vw 1vw;
     font-weight: bold;
 }
 
 main section.questionarios ul li p {
-    color: #777272;
+    color: #f3ecde;
     text-align: initial;
     margin: 5vw 0 3vw 0;
     font-size: 1.5rem;
 }
 
 main section.questionarios ul li a {
-    color: #545454;
+    color: #FD958A;
     font-size: 1rem;
-    background-color: #acacaf;
+    background-color: #F3EAD6;
     border-radius: 30px;
     padding: 1vw 1vw 1vw 1vw;
     text-decoration: none;
@@ -451,12 +455,12 @@ footer {
     justify-content: space-between;
     margin: 0 6vw 0 6vw;
     padding: 2vw 0 0 0;
-    border-top: solid 2px #8f8f8f;
+    border-top: solid 2px #F6B6A7;
     font-weight: bold;
 }
 
 footer div p {
-    color: #545454;
+    color: #A66D45;
     text-align: center;
     margin: 0 0 1vw 0;
 }
@@ -464,11 +468,11 @@ footer div p {
 footer p {
     align-items: center;
     text-align: center;
-    color: #545454;
+    color: #cc9065;
 }
 
 footer a i {
-    color: #545454;
+    color: #A66D45;
     font-size: 2rem;
     margin: 0 0 2vw 0;
 }
