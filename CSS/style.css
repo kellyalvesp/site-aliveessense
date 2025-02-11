@@ -389,6 +389,25 @@ main section.sugestoes ul li a {
     padding: 0.8vw 0.8vw 0.8vw 0.8vw;
     border-radius: 20px;
 }
+main section ul li a{
+    background-color: #FD9584;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin: 2px 2px 30px 2px;
+  }
+  
+main section ul li a:hover {
+    background-color: #D2C98A;
+  }
+  
+main section ul li a:active {
+    background-color: #D2C98A;
+  }
 
 /*=================
  HOME QUESTIONÁRIOS
@@ -445,6 +464,25 @@ main section.questionarios ul li a {
     text-align: center;
     font-weight: bold;
 }
+main section ul li a{
+    background-color: #FD9584;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin: 2px 2px 30px 2px;
+  }
+  
+main section ul li a:hover {
+    background-color: #F6B6A7;
+  }
+  
+main section ul li a:active {
+    background-color: #F6B6A7;
+  }
 
 /*=================
     HOME FOOTER
