@@ -39,14 +39,11 @@
         </nav>
         <script>
            function setActive(element) {
-        // Remove a classe 'active' de todos os itens
         const items = document.querySelectorAll('nav li');
         items.forEach(item => {
             item.classList.remove('active');
             item.querySelector('.underline').style.transform = 'scaleX(0)';
         });
-
-        // Adiciona a classe 'active' ao item clicado
         const parentLi = element.parentElement;
         parentLi.classList.add('active');
         parentLi.querySelector('.underline').style.transform = 'scaleX(1)';

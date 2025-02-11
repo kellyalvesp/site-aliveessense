@@ -92,7 +92,6 @@ video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -179,23 +178,23 @@ header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    position: relative; /* Necessário para a linha animada */
+    position: relative; 
 }
 
 header nav li {
     margin: 0 15px;
-    position: relative; /* Necessário para a linha animada */
+    position: relative; 
 }
 
 header nav a {
     text-decoration: none;
     color: #333;
-    padding: 5px 0; /* Espaçamento para a linha */
+    padding: 5px 0; 
 }
 
 header nav li.active a {
     font-weight: bold;
-    color: #ffffff; /* Cor da navegação selecionada */
+    color: #ffffff; 
 }
 
 /* Linha animada */
@@ -205,13 +204,13 @@ header span.underline {
     left: 0;
     height: 2px;
     width: 100%;
-    background: #ffffff; /* Cor da linha */
-    transform: scaleX(0); /* Começa com a largura 0 */
-    transition: transform 0.3s ease; /* Animação */
+    background: #ffffff; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
 }
 
 header nav li.active span.underline {
-    transform: scaleX(1); /* Animação para a largura total */
+    transform: scaleX(1); 
 }
 
 /*=================
@@ -259,12 +258,13 @@ main section.home >div {
 
 main section.home >div div {
     overflow-y: auto;
-    width: 170px;
-    height: 331px;
+    width: 235px;
+    height: 400px;
 }
 
 main section.home >div div ul li {
-    margin: 0 0 1vw 0;
+    margin: 0 4vw 1vw 0;
+    font-size: 1.2rem;
 }
 
 /*=================
