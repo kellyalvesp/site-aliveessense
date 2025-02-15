@@ -1,85 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sugestões de Pós-Treino</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/fd81c5fa0e.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fd81c5fa0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <h1>aliveessence</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" onclick="setActive(this)">Início</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#beneficios" onclick="setActive(this)">Benefícios</a>
-                    <span class="underline"></span>
-                </li>
-                <li class="active">
-                    <a href="../index.html#sugestoes" onclick="setActive(this)">Sugestões</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#questionarios" onclick="setActive(this)">Questionários</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#contato" onclick="setActive(this)">Contato</a>
-                    <span class="underline"></span>
-                </li>
-            </ul>
-        </nav>
-        <script>
-            function setActive(element) {
-                // Remove a classe 'active' de todos os itens
-                const items = document.querySelectorAll('nav li');
-                items.forEach(item => {
-                    item.classList.remove('active');
-                    item.querySelector('.underline').style.transform = 'scaleX(0)';
-                });
+      <h1>aliveessence</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" onclick="setActive(this)">Início</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#beneficios" onclick="setActive(this)"
+              >Benefícios</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li class="active">
+            <a href="../index.html#sugestoes" onclick="setActive(this)"
+              >Sugestões</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#questionarios" onclick="setActive(this)"
+              >Questionários</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#contato" onclick="setActive(this)"
+              >Contato</a
+            >
+            <span class="underline"></span>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function setActive(element) {
+          // Remove a classe 'active' de todos os itens
+          const items = document.querySelectorAll("nav li");
+          items.forEach((item) => {
+            item.classList.remove("active");
+            item.querySelector(".underline").style.transform = "scaleX(0)";
+          });
 
-                // Adiciona a classe 'active' ao item clicado
-                const parentLi = element.parentElement;
-                parentLi.classList.add('active');
-                parentLi.querySelector('.underline').style.transform = 'scaleX(1)';
-            }
-        </script>
+          // Adiciona a classe 'active' ao item clicado
+          const parentLi = element.parentElement;
+          parentLi.classList.add("active");
+          parentLi.querySelector(".underline").style.transform = "scaleX(1)";
+        }
+      </script>
     </header>
     <main>
-        <section>
-            <a href="../index.html#sugestoes" class="back-button"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+      <section>
+        <a href="../index.html#sugestoes" class="back-button"
+          ><i class="fa-solid fa-arrow-left"></i> Voltar</a
+        >
+        <div class="sugestaoContent">
+          <div class="sugestaoTxt">
             <div>
-                <h1>Sugestões de Pós-Treino</h1>
-                <h2>O que comer depois do treino? Quais suplementos usar?</h2>
-                <p>O pós-treino é uma etapa crucial para maximizar os benefícios dos exercícios físicos e promover o crescimento muscular. Existem várias razões pelas quais o pós-treino é importante: Recuperação muscular: Durante o treino, os músculos são submetidos a um estresse intenso, resultando em microlesões nas fibras musculares.</p>
+              <h1>Sugestões de Pós-Treino</h1>
+              <h2>O que comer depois do treino? Quais suplementos usar?</h2>
+              <p>
+                O pós-treino é uma etapa crucial para maximizar os benefícios
+                dos exercícios físicos e promover o crescimento muscular.
+                Existem várias razões pelas quais o pós-treino é importante:
+                Recuperação muscular: Durante o treino, os músculos são
+                submetidos a um estresse intenso, resultando em microlesões nas
+                fibras musculares.
+              </p>
             </div>
             <div class="suplementos">
-                <p>Abaixo deixamos algumas sugestões de Pós-Treinos</p>
-                <h3>Bauru de aveioca</h3>
-                <p>A receita de bauru de aveioca salva a vontade de comer aquele salgado enquanto fornece sabor e sensação de saciedade. Isso porque possui uma boa quantidade de fibras insolúveis que auxiliam o trânsito intestinal, e beta-glucanos, um tipo de fibra presente nos grãos de aveia que auxilia no controle do colesterol e fortalece a imunidade.</p>
-                <h3>Sanduíche de ovo com abobrinha</h3>
-                <p>Essa receita de sanduíche de ovo com abobrinha fornece proteínas, carboidratos, fibras e gorduras na medida certa.</p>
-                <h3>Bolo de maçã com aveia</h3>
-                <p>A receita de bolo de maçã com aveia é uma das ótimas opções de receitas saudáveis para pós treino. Os pedaços de maçã fornecem um teor de fibras para o bolo, que o deixa com um aroma e sabor de dar água na boca.</p>
-                <h3>Sugerimos os seguintes alimentos Pós-treino:</h3>
-                <p>- Ovos; <br> - Suco de laranja; <br> - Quinoa; <br> - Banana;  <br> - Leite;  <br> - Aveia;  <br> - Suco verde.</p>
-                <h3>Sugerimos adicionar nas receitas os seguintes suplementos:</h3>
-                <p>- Whey Protein; <br> - Creatina; <br> - Glutamina; <br> - Colágeno; <br> - Ômega-3;  <br> - Carboidratos;</p>
+              <p>Abaixo deixamos algumas sugestões de Pós-Treinos</p>
+              <h3>Bauru de aveioca</h3>
+              <p>
+                A receita de bauru de aveioca salva a vontade de comer aquele
+                salgado enquanto fornece sabor e sensação de saciedade. Isso
+                porque possui uma boa quantidade de fibras insolúveis que
+                auxiliam o trânsito intestinal, e beta-glucanos, um tipo de
+                fibra presente nos grãos de aveia que auxilia no controle do
+                colesterol e fortalece a imunidade.
+              </p>
+              <h3>Sanduíche de ovo com abobrinha</h3>
+              <p>
+                Essa receita de sanduíche de ovo com abobrinha fornece
+                proteínas, carboidratos, fibras e gorduras na medida certa.
+              </p>
+              <h3>Bolo de maçã com aveia</h3>
+              <p>
+                A receita de bolo de maçã com aveia é uma das ótimas opções de
+                receitas saudáveis para pós treino. Os pedaços de maçã fornecem
+                um teor de fibras para o bolo, que o deixa com um aroma e sabor
+                de dar água na boca.
+              </p>
+              <h3>Sugerimos os seguintes alimentos Pós-treino:</h3>
+              <p>
+                - Ovos; <br />
+                - Suco de laranja; <br />
+                - Quinoa; <br />
+                - Banana; <br />
+                - Leite; <br />
+                - Aveia; <br />
+                - Suco verde.
+              </p>
+              <h3>
+                Sugerimos adicionar nas receitas os seguintes suplementos:
+              </h3>
+              <p>
+                - Whey Protein; <br />
+                - Creatina; <br />
+                - Glutamina; <br />
+                - Colágeno; <br />
+                - Ômega-3; <br />
+                - Carboidratos;
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="sugestaoImg">
+            <img
+              src="../imagens/postreino-removebg-preview.png"
+              alt="Imagem Pós-Treino"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="contato">
-        <div>
-            <p>Telefone de Contato: +55 (47) 99259-9985.</p>
-            <p> &copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
-        </div>
-        <p>Lembrando que os treinos recomendados no site são apenas sugestões <br> e podem ser ajustados de acordo com suas necessidades e objetivos pessoais.</p>
-        <a href="https://www.instagram.com/aliveessence_/"><i class="fa-brands fa-instagram"></i></a>
+      <div>
+        <p>Telefone de Contato: +55 (47) 99259-9985.</p>
+        <p>&copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
+      </div>
+      <p>
+        Lembrando que os treinos recomendados no site são apenas sugestões
+        <br />
+        e podem ser ajustados de acordo com suas necessidades e objetivos
+        pessoais.
+      </p>
+      <a href="https://www.instagram.com/aliveessence_/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,102 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sugestões de Pré-Treino</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/fd81c5fa0e.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fd81c5fa0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>aliveessence</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" onclick="setActive(this)">Início</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#beneficios" onclick="setActive(this)">Benefícios</a>
-                    <span class="underline"></span>
-                </li>
-                <li class="active">
-                    <a href="../index.html#sugestoes" onclick="setActive(this)">Sugestões</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#questionarios" onclick="setActive(this)">Questionários</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#contato" onclick="setActive(this)">Contato</a>
-                    <span class="underline"></span>
-                </li>
-            </ul>
-        </nav>
-        <script>
-            function setActive(element) {
-                // Remove a classe 'active' de todos os itens
-                const items = document.querySelectorAll('nav li');
-                items.forEach(item => {
-                    item.classList.remove('active');
-                    item.querySelector('.underline').style.transform = 'scaleX(0)';
-                });
+      <h1>aliveessence</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" onclick="setActive(this)">Início</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#beneficios" onclick="setActive(this)"
+              >Benefícios</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li class="active">
+            <a href="../index.html#sugestoes" onclick="setActive(this)"
+              >Sugestões</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#questionarios" onclick="setActive(this)"
+              >Questionários</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#contato" onclick="setActive(this)"
+              >Contato</a
+            >
+            <span class="underline"></span>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function setActive(element) {
+          // Remove a classe 'active' de todos os itens
+          const items = document.querySelectorAll("nav li");
+          items.forEach((item) => {
+            item.classList.remove("active");
+            item.querySelector(".underline").style.transform = "scaleX(0)";
+          });
 
-                // Adiciona a classe 'active' ao item clicado
-                const parentLi = element.parentElement;
-                parentLi.classList.add('active');
-                parentLi.querySelector('.underline').style.transform = 'scaleX(1)';
-            }
-        </script>
+          // Adiciona a classe 'active' ao item clicado
+          const parentLi = element.parentElement;
+          parentLi.classList.add("active");
+          parentLi.querySelector(".underline").style.transform = "scaleX(1)";
+        }
+      </script>
     </header>
     <main>
-        <section> 
-            <a href="../index.html#sugestoes" class="back-button"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+      <section>
+        <a href="../index.html#sugestoes" class="back-button"
+          ><i class="fa-solid fa-arrow-left"></i> Voltar</a
+        >
+        <div class="sugestaoContent">
+          <div class="sugestaoTxt">
             <div>
-                <h1>Sugestões de Pré-Treino</h1>
-                <h2 class="firstchild">O que comer no pré-treino? Quais suplementos usar?</h2>
-                <p>Comer bem antes do treino faz toda a diferença para ter mais energia e disposição. Um bom pré-treino
-                    ajuda a evitar o cansaço rápido e garante que nosso corpo tenha combustível para o treino.O ideal é
-                    apostar em carboidratos, que liberam energia aos poucos, um pouco de proteína para fortalecer os
-                    músculos e uma pequena quantidade de gordura boa para prolongar a sensação de saciedade. Esse combo
-                    de
-                    nutrientes deixa o corpo preparado para o treino, ajudando você a se sentir mais focado e pronto
-                    para
-                    dar o seu melhor.
-                </p>
+              <h1>Sugestões de Pré-Treino</h1>
+              <h2 class="firstchild">
+                O que comer no pré-treino? Quais suplementos usar?
+              </h2>
+              <p>
+                Comer bem antes do treino faz toda a diferença para ter mais
+                energia e disposição. Um bom pré-treino ajuda a evitar o cansaço
+                rápido e garante que nosso corpo tenha combustível para o
+                treino.O ideal é apostar em carboidratos, que liberam energia
+                aos poucos, um pouco de proteína para fortalecer os músculos e
+                uma pequena quantidade de gordura boa para prolongar a sensação
+                de saciedade. Esse combo de nutrientes deixa o corpo preparado
+                para o treino, ajudando você a se sentir mais focado e pronto
+                para dar o seu melhor.
+              </p>
             </div>
             <div class="suplementos">
-                <p>Abaixo deixamos algumas sugestões de Pré-Treinos:</p>
-                <h3>Panqueca de banana</h3>
-                <p>A banana é um dos alimentos mais ricos em vitaminas e para um atleta ela é fundamental na recuperação
-                    e fortalecimento muscular.
-                    Inclusive, treinos de pernas e panturrilhas provoca câimbras nos músculos, por isso coma essa
-                    panqueca de banana para que reduza as chances disso acontecer.
-                    Afinal, treinar com o músculo repuxado não é confortável.
-                </p>
-                <h3>Sanduíche de Ricota</h3>
-                <p>O sanduba é um lanche rápido e muito prático, sem falar que você pode fazer com inúmeros recheios.
-                    Este, em especial, é uma opção mais leve e super saborosa com a ricota. Veja como preparar esse
-                    lanche natural.</p>
-                <h3>Omelete com queijo branco e tomate</h3>
-                <p>O ovo é um dos ingredientes mais versáteis e está presente em diversas receitas do universo fitness,
-                    tudo porque auxilia no ganho de massa magra. Aliás, ele é ideal para um pré-treino uma vez que dá
-                    energia, saciedade e força.</p>
-                <h3>Sugerimos adicionar nas receitas os seguintes suplementos:</h3>
-                <p>- Creatina; <br> - Arginina; <br> - Proteína; <br> - Carboidrato.</p>
+              <p>Abaixo deixamos algumas sugestões de Pré-Treinos:</p>
+              <h3>Panqueca de banana</h3>
+              <p>
+                A banana é um dos alimentos mais ricos em vitaminas e para um
+                atleta ela é fundamental na recuperação e fortalecimento
+                muscular. Inclusive, treinos de pernas e panturrilhas provoca
+                câimbras nos músculos, por isso coma essa panqueca de banana
+                para que reduza as chances disso acontecer. Afinal, treinar com
+                o músculo repuxado não é confortável.
+              </p>
+              <h3>Sanduíche de Ricota</h3>
+              <p>
+                O sanduba é um lanche rápido e muito prático, sem falar que você
+                pode fazer com inúmeros recheios. Este, em especial, é uma opção
+                mais leve e super saborosa com a ricota. Veja como preparar esse
+                lanche natural.
+              </p>
+              <h3>Omelete com queijo branco e tomate</h3>
+              <p>
+                O ovo é um dos ingredientes mais versáteis e está presente em
+                diversas receitas do universo fitness, tudo porque auxilia no
+                ganho de massa magra. Aliás, ele é ideal para um pré-treino uma
+                vez que dá energia, saciedade e força.
+              </p>
+              <h3>
+                Sugerimos adicionar nas receitas os seguintes suplementos:
+              </h3>
+              <p>
+                - Creatina; <br />
+                - Arginina; <br />
+                - Proteína; <br />
+                - Carboidrato.
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="sugestaoImg">
+            <img
+              src="../imagens/pretreino-removebg-preview.png"
+              alt="Imagem Pré-Treino"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="contato">
-        <div>
-            <p>Telefone de Contato: +55 (47) 99259-9985.</p>
-            <p> &copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
-        </div>
-        <p>Lembrando que os treinos recomendados no site são apenas sugestões <br> e podem ser ajustados de acordo com suas necessidades e objetivos pessoais.</p>
-        <a href="https://www.instagram.com/aliveessence_/"><i class="fa-brands fa-instagram"></i></a>
+      <div>
+        <p>Telefone de Contato: +55 (47) 99259-9985.</p>
+        <p>&copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
+      </div>
+      <p>
+        Lembrando que os treinos recomendados no site são apenas sugestões
+        <br />
+        e podem ser ajustados de acordo com suas necessidades e objetivos
+        pessoais.
+      </p>
+      <a href="https://www.instagram.com/aliveessence_/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alimentação Saudável</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/fd81c5fa0e.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fd81c5fa0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>aliveessence</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" onclick="setActive(this)">Início</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#beneficios" onclick="setActive(this)">Benefícios</a>
-                    <span class="underline"></span>
-                </li>
-                <li class="active">
-                    <a href="../index.html#sugestoes" onclick="setActive(this)">Sugestões</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#questionarios" onclick="setActive(this)">Questionários</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="../index.html#contato" onclick="setActive(this)">Contato</a>
-                    <span class="underline"></span>
-                </li>
-            </ul>
-        </nav>
-        <script>
-            function setActive(element) {
-                // Remove a classe 'active' de todos os itens
-                const items = document.querySelectorAll('nav li');
-                items.forEach(item => {
-                    item.classList.remove('active');
-                    item.querySelector('.underline').style.transform = 'scaleX(0)';
-                });
+      <h1>aliveessence</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" onclick="setActive(this)">Início</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#beneficios" onclick="setActive(this)"
+              >Benefícios</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li class="active">
+            <a href="../index.html#sugestoes" onclick="setActive(this)"
+              >Sugestões</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#questionarios" onclick="setActive(this)"
+              >Questionários</a
+            >
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="../index.html#contato" onclick="setActive(this)"
+              >Contato</a
+            >
+            <span class="underline"></span>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function setActive(element) {
+          // Remove a classe 'active' de todos os itens
+          const items = document.querySelectorAll("nav li");
+          items.forEach((item) => {
+            item.classList.remove("active");
+            item.querySelector(".underline").style.transform = "scaleX(0)";
+          });
 
-                // Adiciona a classe 'active' ao item clicado
-                const parentLi = element.parentElement;
-                parentLi.classList.add('active');
-                parentLi.querySelector('.underline').style.transform = 'scaleX(1)';
-            }
-        </script>
+          // Adiciona a classe 'active' ao item clicado
+          const parentLi = element.parentElement;
+          parentLi.classList.add("active");
+          parentLi.querySelector(".underline").style.transform = "scaleX(1)";
+        }
+      </script>
     </header>
     <main>
-        <section>
-            <a href="../index.html#sugestoes" class="back-button"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
-                <h1>Alimentação Saudável</h1>
-                <h2>O que é uma alimentação saudável?</h2>
-                <p>Alimentação saudável é aquela que fornece todos os nutrientes fundamentais para o funcionamento do
-                    nosso corpo, como carboidratos, proteínas, sais minerais e vitaminas. Muitas pessoas acreditam que
-                    os carboidratos são vilões quando o assunto é uma alimentação adequada, entretanto os carboidratos
-                    são uma importante fonte de energia para o nosso corpo.</p>
-                <h3>Sugestão de alimentos saudáveis:</h3>
-                <p>- Batata-doce; <br> - Legumes; <br> - Chia; <br> - Peixes; <br> - Aveia.</p>
-        </section>
+      <section>
+        <a href="../index.html#sugestoes" class="back-button"
+          ><i class="fa-solid fa-arrow-left"></i> Voltar</a
+        >
+        <div class="alimentacaoContent">
+          <div class="alimentacaoTxt">
+            <h1>Alimentação Saudável</h1>
+            <h2>O que é uma alimentação saudável?</h2>
+            <p>
+              Alimentação saudável é aquela que fornece todos os nutrientes
+              fundamentais para o funcionamento do nosso corpo, como
+              carboidratos, proteínas, sais minerais e vitaminas. Muitas pessoas
+              acreditam que os carboidratos são vilões quando o assunto é uma
+              alimentação adequada, entretanto os carboidratos são uma
+              importante fonte de energia para o nosso corpo.
+            </p>
+            <h3>Sugestão de alimentos saudáveis:</h3>
+            <p>
+              - Batata-doce; <br />
+              - Legumes; <br />
+              - Chia; <br />
+              - Peixes; <br />
+              - Aveia.
+            </p>
+          </div>
+          <div class="alimentacaoImg">
+            <img
+              src="../imagens/9e4f3d8f1cbac285a39f3c42b9e121cc-removebg-preview.png"
+              alt="Imagem Alimentação"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="contato">
-        <div>
-            <p>Telefone de Contato: +55 (47) 99259-9985.</p>
-            <p> &copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
-        </div>
-        <p>Lembrando que os treinos recomendados no site são apenas sugestões <br> e podem ser ajustados de acordo com suas necessidades e objetivos pessoais.</p>
-        <a href="https://www.instagram.com/aliveessence_/"><i class="fa-brands fa-instagram"></i></a>
+      <div>
+        <p>Telefone de Contato: +55 (47) 99259-9985.</p>
+        <p>&copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
+      </div>
+      <p>
+        Lembrando que os treinos recomendados no site são apenas sugestões
+        <br />
+        e podem ser ajustados de acordo com suas necessidades e objetivos
+        pessoais.
+      </p>
+      <a href="https://www.instagram.com/aliveessence_/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
     </footer>
-</body>
-
+  </body>
 </html>

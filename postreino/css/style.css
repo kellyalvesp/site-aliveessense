@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,202 +104,297 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*==============
     HOME PAGE 
 ===============*/
 html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #F3EAD6;
-    scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #f3ead6;
+  scroll-behavior: smooth;
 }
 
 header {
-    color: #A66D45;
-    justify-content: space-between;
-    display: flex;
-    background: #D2C98A;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    font-weight: bold;
-    opacity: 70%;
+  color: #a66d45;
+  justify-content: space-between;
+  display: flex;
+  background: #d2c98a;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  font-weight: bold;
+  opacity: 70%;
 }
 
 header h1 {
-    text-align: left;
-    font-size: 1.5rem;
-    margin: 2vw 2vw 2vw 2vw;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 2vw 2vw 2vw 2vw;
 }
 
 header nav ul {
-    display: flex;
-    margin: 0 2vw 0 2vw;
+  display: flex;
+  margin: 0 2vw 0 2vw;
 }
 
 header nav ul li {
-    margin: 2vw 0.5vw 2vw 0.5vw;
-    font-size: 1.3rem;
+  margin: 2vw 0.5vw 2vw 0.5vw;
+  font-size: 1.3rem;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: #A66D45;
+  text-decoration: none;
+  color: #a66d45;
 }
 header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    position: relative; /* Necessário para a linha animada */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  position: relative; /* Necessário para a linha animada */
 }
 
 header nav li {
-    margin: 0 15px;
-    position: relative; /* Necessário para a linha animada */
+  margin: 0 15px;
+  position: relative; /* Necessário para a linha animada */
 }
 
 header nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 0; /* Espaçamento para a linha */
+  text-decoration: none;
+  color: #333;
+  padding: 5px 0; /* Espaçamento para a linha */
 }
 
 header nav li.active a {
-    font-weight: bold;
-    color: #ffffff; /* Cor da navegação selecionada */
+  font-weight: bold;
+  color: #ffffff; /* Cor da navegação selecionada */
 }
 
 /* Linha animada */
 header span.underline {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background: #ffffff; /* Cor da linha */
-    transform: scaleX(0); /* Começa com a largura 0 */
-    transition: transform 0.3s ease; /* Animação */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #ffffff; /* Cor da linha */
+  transform: scaleX(0); /* Começa com a largura 0 */
+  transition: transform 0.3s ease; /* Animação */
 }
 
 header nav li.active span.underline {
-    transform: scaleX(1); /* Animação para a largura total */
+  transform: scaleX(1); /* Animação para a largura total */
 }
 
 /*=================
     HOME MAIN
 ==================*/
 main section {
-    margin: 8vw 2vw 4vw 2vw;
-    background-color: #F3EAD6
+  margin: 8vw 2vw 4vw 2vw;
+  background-color: #f3ead6;
 }
 main section a.back-button {
-    background-color: #FD9584;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s;
-    margin: 2px 2px 30px 2px;
-  }
-  
+  background-color: #fd9584;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  margin: 2px 2px 30px 2px;
+}
+
 main section a.back-button:hover {
-    background-color: #D2C98A;
-  }
-  
+  background-color: #d2c98a;
+}
+
 main section a.back-button:active {
-    background-color: #D2C98A;
-  }
+  background-color: #d2c98a;
+}
 main section div h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #A66D45;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #a66d45;
 }
 
 main section div h2 {
-    margin: 2vw 0 2vw 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #FD9584;
+  margin: 2vw 0 2vw 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fd9584;
 }
 
 main section div h2.firstchild {
-    margin: 2vw 0 1vw 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #545454;
+  margin: 2vw 0 1vw 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #545454;
 }
 
 main section div p {
-    font-size: 1.2rem;
-    color: #A66D45;
-    width: 1000px;
+  font-size: 1.2rem;
+  color: #a66d45;
+  width: 1000px;
 }
 
 main section div.suplementos h3 {
-    margin: 1vw 0 1vw 0;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #A7A155;
+  margin: 1vw 0 1vw 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a7a155;
 }
 
 /*=================
     HOME FOOTER
 ==================*/
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 6vw 0 6vw;
-    padding: 2vw 0 0 0;
-    border-top: solid 2px #F6B6A7;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 6vw 0 6vw;
+  padding: 2vw 0 0 0;
+  border-top: solid 2px #f6b6a7;
+  font-weight: bold;
 }
 
 footer div p {
-    color: #A66D45;
-    text-align: center;
-    margin: 0 0 1vw 0;
+  color: #a66d45;
+  text-align: center;
+  margin: 0 0 1vw 0;
 }
 
 footer p {
-    align-items: center;
-    text-align: center;
-    color: #cc9065;
+  align-items: center;
+  text-align: center;
+  color: #cc9065;
 }
 
 footer a i {
-    color: #A66D45;
+  color: #a66d45;
+  font-size: 2rem;
+  margin: 0 0 2vw 0;
+}
+.sugestaoContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 2vw 0 2vw 0;
+}
+
+.sugestaoContent p {
+  text-align: justify;
+}
+@media screen and (max-width: 960px) {
+  main section a.back-button {
+    margin-top: 10%;
+  }
+  main section {
+    margin: 4vw 2vw 4vw 2vw;
+  }
+
+  main section div.sugestaoContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main section div.sugestaoContent .sugestaoTxt {
+    margin-bottom: 2vw;
+  }
+
+  .sugestaoContent p {
+    font-size: 1rem;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .sugestaoImg img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  main section div h1 {
     font-size: 2rem;
-    margin: 0 0 2vw 0;
+  }
+
+  main section div h2 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    margin: 0 2vw;
+    padding: 1vw 0;
+  }
+
+  footer div p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+
+  footer p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  footer a i {
+    font-size: 1.5rem;
+  }
+
+  .suplementos h3 {
+    font-size: 1.1rem;
+  }
+
+  .sugestaoContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .suplementos {
+    margin-top: 1vw;
+  }
+
+  .sugestaoTxt,
+  .suplementos {
+    width: 100%;
+  }
+
+  .sugestaoImg {
+    margin-top: 2vw;
+  }
+  header h1 {
+    display: none;
+  }
 }

@@ -1,201 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aliveessence</title>
-    <link rel="stylesheet" href="CSS/style.css" type="text/css">
-    <script src="https://kit.fontawesome.com/fd81c5fa0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/fd81c5fa0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>aliveessence</h1>
-        <nav>
-            <ul>
-                <li class="active">
-                    <a href="#inicio" onclick="setActive(this)">Início</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="#beneficios" onclick="setActive(this)">Benefícios</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="#sugestoes" onclick="setActive(this)">Sugestões</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="#questionarios" onclick="setActive(this)">Questionários</a>
-                    <span class="underline"></span>
-                </li>
-                <li>
-                    <a href="#contato" onclick="setActive(this)">Contato</a>
-                    <span class="underline"></span>
-                </li>
-            </ul>
-        </nav>
-        <script>
-           function setActive(element) {
-        const items = document.querySelectorAll('nav li');
-        items.forEach(item => {
-            item.classList.remove('active');
-            item.querySelector('.underline').style.transform = 'scaleX(0)';
-        });
-        const parentLi = element.parentElement;
-        parentLi.classList.add('active');
-        parentLi.querySelector('.underline').style.transform = 'scaleX(1)';
-    }
-        </script>
+      <h1>aliveessence</h1>
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="#inicio" onclick="setActive(this)">Início</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="#beneficios" onclick="setActive(this)">Benefícios</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="#sugestoes" onclick="setActive(this)">Sugestões</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="#questionarios" onclick="setActive(this)">Questionários</a>
+            <span class="underline"></span>
+          </li>
+          <li>
+            <a href="#contato" onclick="setActive(this)">Contato</a>
+            <span class="underline"></span>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function setActive(element) {
+          const items = document.querySelectorAll("nav li");
+          items.forEach((item) => {
+            item.classList.remove("active");
+            item.querySelector(".underline").style.transform = "scaleX(0)";
+          });
+          const parentLi = element.parentElement;
+          parentLi.classList.add("active");
+          parentLi.querySelector(".underline").style.transform = "scaleX(1)";
+        }
+      </script>
     </header>
     <main>
-        <section class="home" id="inicio">
-
-            <div>
-                <div>
-                    <ul>
-                        <li>
-                            Nosso site oferece treinos gratuitos e sugestões de alimentação. Se você é iniciante ou não,
-                            nossa missão é ajudá-lo em cada fase da sua jornada fitness, oferecendo treinos
-                            personalizados e dicas para ultrapassar seus próprios limites. Prepare-se para alcançar a
-                            melhor versão de si mesmo!
-                        </li>
-                        <li>
-                            Além disso, nosso compromisso é inspirá-lo a superar seus limites e revelar o melhor de si.
-                            Oferecemos motivação e suporte para que você se sinta confiante e energizado. Explore nossos
-                            recursos e estratégias para alcançar seus objetivos com eficácia e entusiasmo, e transforme
-                            seus sonhos em realidade.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <span>
-                <h2>Impulsione seu treino com energia e foco: <br> descubra o poder de uma vida ativa!</h2>
-                <p>
-                    Bem-vindo ao aliveessence, o seu destino para transformar <br> sua vida através de exercícios
-                    físicos e
-                    bem-estar!
-                </p>
-            </span>
-        </section>
-        <section class="beneficios" id="beneficios">
-            <div>
-                <img src="imagens/yogapose.jpeg" alt="Imagem Práticas Esportivas">
-            </div>
+      <section class="home" id="inicio">
+        <div class="celular">
+          <div>
             <ul>
-                <h2 class="titulo">Benefícios</h2>
-                <li>
-                    <h2>Controle de Peso</h2>
-                    <p>
-                        Exercícios físicos regulares ajudam a controlar o peso, reduzir a gordura em diferentes partes
-                        do corpo e manter a massa muscular. O nível de atividade física é determinado com base na
-                        quantidade
-                        de energia que você gasta com
-                        as atividades diárias.
-                    </p>
-                </li>
-                <li>
-                    <h2>Condição Cardiovascular</h2>
-                    <p>
-                        Exercícios como caminhada, corrida e natação fortalecem o coração e melhoram a circulação. Com o
-                        tempo, isso resulta em um fluxo sanguíneo mais eficiente e promovem uma saúde cardiovascular
-                        geral, indicando boa saúde.
-                    </p>
-                </li>
-                <li>
-                    <h2>Humor e Bem-estar</h2>
-                    <p>
-                        A condição física está ligada à saúde mental e ao bem-estar. Estudos mostram que a atividade
-                        física traz benefícios emocionais, como melhor humor, autoestima e sensação de bem-estar, além
-                        de reduzir ansiedade, tensão e depressão.
-                    </p>
-                </li>
-                <li>
-                    <h2>Qualidade do Sono</h2>
-                    <p>
-                        Exercícios físicos regulares melhoram a qualidade do sono e a saúde no geral. O sono, afetado
-                        por fatores psicológicos e sociais, pode ser melhorado com atividades físicas regulares, que
-                        também podem ajudar no tratamento de distúrbios do sono específicos.
-                    </p>
-                </li>
+              <li>
+                Nosso site oferece treinos gratuitos e sugestões de alimentação.
+                Se você é iniciante ou não, nossa missão é ajudá-lo em cada fase
+                da sua jornada fitness, oferecendo treinos personalizados e
+                dicas para ultrapassar seus próprios limites. Prepare-se para
+                alcançar a melhor versão de si mesmo!
+              </li>
+              <li>
+                Além disso, nosso compromisso é inspirá-lo a superar seus
+                limites e revelar o melhor de si. Oferecemos motivação e suporte
+                para que você se sinta confiante e energizado. Explore nossos
+                recursos e estratégias para alcançar seus objetivos com eficácia
+                e entusiasmo, e transforme seus sonhos em realidade.
+              </li>
             </ul>
-        </section>
-        <section class="sugestoes" id="sugestoes">
-            <div class="first">
-                <div>
-                    <h2>Sugestões</h2>
-                    <h3> Bem-vindo à nossa aba de sugestões!</h3>
-                    <p>
-                        Nosso objetivo é melhorar continuamente e oferecer o melhor
-                        para todos. <br> Confira nossas sugestões e ajude-nos a fazer ainda mais por você!
-                    </p>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-oxQEqzdFmc?si=fqps5sgKZIdL8uUh"
-                    title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
-                </div>
-            </div>
-            <ul>
-                <li>
-                    <h3>Pré-Treino</h3>
-                    <p>Se preparar corretamente antes do treino é essencial para melhorar o desempenho e prevenir
-                        lesões.</p>
-                    <a href="pretreino/pretreino.html">Saiba Mais:</a>
-                </li>
-                <li>
-                    <h3>Alimentação</h3>
-                    <p>A alimentação é um papel importante na saúde e desempenho físico, ingerir
-                        os nutrientes corretos é essencial para poupar a energia, a recuperação
-                        e os resultados.</p>
-                    <a href="alimentacao/alimentacao.html">Saiba Mais:</a>
-                </li>
-                <li>
-                    <h3>Pós-Treino</h3>
-                    <p>O pós-treino é necessário para recuperar o músculo e restabelecer a energia. Envolve práticas
-                        para preparar o corpo para o próximo treino.</p>
-                    <a href="postreino/postreino.html">Saiba Mais:</a>
-                </li>
-            </ul>
-        </section>
-        <section class="questionarios" id="questionarios">
-            <h2>Para desenvolver um treino que atenda às suas necessidades de forma ideal, <br> você poderia responder a
-                estes questionários?</h2>
-            <ul>
-                <li>
-                    <h3>Preferências</h3>
-                    <p>Este questionário foi desenvolvido para entender suas preferências, objetivos e estilo de vida.
-                        Com base nas suas respostas, poderemos desenvolver um programa de exercícios que se adapte a
-                        você.</p>
-                    <a href="Preferencias/index.html">Clique Aqui</a>
-                </li>
-                <li>
-                    <h3>Perguntas Pessoais</h3>
-                    <p>Este questionário foi criado para nos ajudar a conhecer melhor você e suas necessidades de
-                        treino. Ao responder a estas perguntas pessoais, conseguiremos adaptar um programa que se alinhe
-                        aos seus objetivos e estilo de vida.</p>
-                    <a href="Contato/index.html">Clique Aqui</a>
-                </li>
-                <li>
-                    <h3>Restrições</h3>
-                    <p>Este questionário foi desenvolvido para entender suas restrições de treino. Conhecer suas
-                        limitações físicas, condições de saúde e preferências é fundamental para que possamos criar um
-                        programa de exercícios seguro e eficaz para você.</p>
-                    <a href="restricoes/index.html">Clique Aqui</a>
-                </li>
-            </ul>
-        </section>
+          </div>
+        </div>
+        <span>
+          <h2>
+            Impulsione seu treino com energia e foco: <br />
+            descubra o poder de uma vida ativa!
+          </h2>
+          <p>
+            Bem-vindo ao aliveessence, o seu destino para transformar <br />
+            sua vida através de exercícios físicos e bem-estar!
+          </p>
+        </span>
+      </section>
+      <section class="beneficios" id="beneficios">
+        <div>
+          <img src="imagens/yogapose.jpeg" alt="Imagem Práticas Esportivas" />
+        </div>
+        <ul>
+          <h2 class="titulo">Benefícios</h2>
+          <li>
+            <h2>Controle de Peso</h2>
+            <p>
+              Exercícios físicos regulares ajudam a controlar o peso, reduzir a
+              gordura em diferentes partes do corpo e manter a massa muscular. O
+              nível de atividade física é determinado com base na quantidade de
+              energia que você gasta com as atividades diárias.
+            </p>
+          </li>
+          <li>
+            <h2>Condição Cardiovascular</h2>
+            <p>
+              Exercícios como caminhada, corrida e natação fortalecem o coração
+              e melhoram a circulação. Com o tempo, isso resulta em um fluxo
+              sanguíneo mais eficiente e promovem uma saúde cardiovascular
+              geral, indicando boa saúde.
+            </p>
+          </li>
+          <li>
+            <h2>Humor e Bem-estar</h2>
+            <p>
+              A condição física está ligada à saúde mental e ao bem-estar.
+              Estudos mostram que a atividade física traz benefícios emocionais,
+              como melhor humor, autoestima e sensação de bem-estar, além de
+              reduzir ansiedade, tensão e depressão.
+            </p>
+          </li>
+          <li>
+            <h2>Qualidade do Sono</h2>
+            <p>
+              Exercícios físicos regulares melhoram a qualidade do sono e a
+              saúde no geral. O sono, afetado por fatores psicológicos e
+              sociais, pode ser melhorado com atividades físicas regulares, que
+              também podem ajudar no tratamento de distúrbios do sono
+              específicos.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="sugestoes" id="sugestoes">
+        <div class="first">
+          <div>
+            <h2>Sugestões</h2>
+            <h3>Bem-vindo à nossa aba de sugestões!</h3>
+            <p>
+              Nosso objetivo é melhorar continuamente e oferecer o melhor para
+              todos. <br />
+              Confira nossas sugestões e ajude-nos a fazer ainda mais por você!
+            </p>
+          </div>
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-oxQEqzdFmc?si=fqps5sgKZIdL8uUh"
+              title="YouTube video player"
+              style="border: none"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <h3>Pré-Treino</h3>
+            <p>
+              Se preparar corretamente antes do treino é essencial para melhorar
+              o desempenho e prevenir lesões.
+            </p>
+            <a href="pretreino/pretreino.html">Saiba Mais:</a>
+          </li>
+          <li>
+            <h3>Alimentação</h3>
+            <p>
+              A alimentação é um papel importante na saúde e desempenho físico,
+              ingerir os nutrientes corretos é essencial para poupar a energia,
+              a recuperação e os resultados.
+            </p>
+            <a href="alimentacao/alimentacao.html">Saiba Mais:</a>
+          </li>
+          <li>
+            <h3>Pós-Treino</h3>
+            <p>
+              O pós-treino é necessário para recuperar o músculo e restabelecer
+              a energia. Envolve práticas para preparar o corpo para o próximo
+              treino.
+            </p>
+            <a href="postreino/postreino.html">Saiba Mais:</a>
+          </li>
+        </ul>
+      </section>
+      <section class="questionarios" id="questionarios">
+        <h2>
+          Para desenvolver um treino que atenda às suas necessidades de forma
+          ideal, <br />
+          você poderia responder a estes questionários?
+        </h2>
+        <ul>
+          <li>
+            <h3>Preferências</h3>
+            <p>
+              Este questionário foi desenvolvido para entender suas
+              preferências, objetivos e estilo de vida. Com base nas suas
+              respostas, poderemos desenvolver um programa de exercícios que se
+              adapte a você.
+            </p>
+            <a href="Preferencias/index.html">Clique Aqui</a>
+          </li>
+          <li>
+            <h3>Perguntas Pessoais</h3>
+            <p>
+              Este questionário foi criado para nos ajudar a conhecer melhor
+              você e suas necessidades de treino. Ao responder a estas perguntas
+              pessoais, conseguiremos adaptar um programa que se alinhe aos seus
+              objetivos e estilo de vida.
+            </p>
+            <a href="Contato/index.html">Clique Aqui</a>
+          </li>
+          <li>
+            <h3>Restrições</h3>
+            <p>
+              Este questionário foi desenvolvido para entender suas restrições
+              de treino. Conhecer suas limitações físicas, condições de saúde e
+              preferências é fundamental para que possamos criar um programa de
+              exercícios seguro e eficaz para você.
+            </p>
+            <a href="restricoes/index.html">Clique Aqui</a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer id="contato">
-        <div>
-            <p>Telefone de Contato: +55 (47) 99259-9985.</p>
-            <p> &copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
-        </div>
-        <p>Lembrando que os treinos recomendados no site são apenas sugestões <br> e podem ser ajustados de acordo com suas necessidades e objetivos pessoais.</p>
-        <a href="https://www.instagram.com/aliveessence_/"><i class="fa-brands fa-instagram"></i></a>
+      <div>
+        <p>Telefone de Contato: +55 (47) 99259-9985.</p>
+        <p>&copy; 2024 BR-280 - Colégio Agrícola, Araquari - SC, 89245-000.</p>
+      </div>
+      <p>
+        Lembrando que os treinos recomendados no site são apenas sugestões
+        <br />
+        e podem ser ajustados de acordo com suas necessidades e objetivos
+        pessoais.
+      </p>
+      <a href="https://www.instagram.com/aliveessence_/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
     </footer>
-</body>
-
+  </body>
 </html>
